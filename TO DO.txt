@@ -1,2 +1,3 @@
 TO DO:
-- link usage logging,
+- code refactoring
+- ERROR messages

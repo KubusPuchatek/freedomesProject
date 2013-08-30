@@ -6,6 +6,7 @@ if (isset($_POST['Wyslij'])){
 	foreach ($login as $t){
 		if ($t['password']==$_POST['password']){
 			$_SESSION['logged']= "1";
+			$_SESSION['login']=$t['login'];
 			header("Location: index.php");
 		}
 	}
@@ -30,5 +31,5 @@ if (isset($_POST['Wyslij'])){
 	</table>
 
 
-	<input type="submit" value="Wyslij" name="Wyslij" />
+	<input type="submit" value="Log In" name="Wyslij" />
 </form>

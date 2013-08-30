@@ -12,16 +12,16 @@ class session
 	
 
 	function insert($url, $rand){
-		mysql_query('insert into URLcut values(null,\''.$url.'\',\''.$rand.'\', \'\');');
+		mysql_query('insert into URLcut values(null,\''.$url.'\',\''.$rand.'\', \' \',\''.$_SESSION['login'].'\');');
 	}
 
-	/*function update()
+	function update()
 	{
-		mysql_query('update URLcut set used=\''..'\' where ');
+		mysql_query('update URLcut set used=\''.date('Y-m-d h:i:s').'\' where owner=\''.$_SESSION['login'].'\' AND dstURL=\''.$_SESSION['dstURL'].'\';');
 	}
-	*/
-	function selectAll($urlAdress){
-		$ret1=mysql_query('SELECT * from URLcut where srcURL = \''.$urlAdress.'\';');
+	
+	function selectAll(){
+		$ret1=mysql_query('SELECT * from URLcut where owner = \''.$_SESSION['login'].'\';');
 		return $ret1;
 	}
 
