@@ -1,16 +1,16 @@
-Projekt stworzony na potrzeby zadania rekrutacyjnego dla firmy FREEDOMES.
+ï»¿Projekt stworzony na potrzeby zadania rekrutacyjnego dla firmy FREEDOMES.
 
-Projekt spe³nia nastêpuj¹ce za³o¿enia:
+Projekt speÅ‚nia nastÄ™pujÄ…ce zaÅ‚oÅ¼enia:
 - system pracuje jako aplikacja webowa
-- dostêp do funkcjonalnoœci skracania URL maj¹ jedynie autoryzowani u¿ytkownicy
-- adres URL t³umaczony jest na krótki, losowy ci¹g znaków
-- mo¿liwym ma byæ dodanie w³asnego ci¹gu znaków bez koniecznoœci jego losowania
-- wywo³anie skróconego adresu powinno zostaæ odnotowane (odnotowywana jest jedynie ostatnie wywo³anie)
+- dostÄ™p do funkcjonalnoÅ›ci skracania URL majÄ… jedynie autoryzowani uÅ¼ytkownicy
+- adres URL tÅ‚umaczony jest na krÃ³tki, losowy ciÄ…g znakÃ³w
+- moÅ¼liwym ma byÄ‡ dodanie wÅ‚asnego ciÄ…gu znakÃ³w bez koniecznoÅ›ci jego losowania
+- wywoÅ‚anie skrÃ³conego adresu powinno zostaÄ‡ odnotowane (odnotowywana jest jedynie ostatnie wywoÅ‚anie)
 
 
-Projekt jest dostêpny w wersji on-line pod adresem: 
+Projekt jest dostÄ™pny w wersji on-line pod adresem: 
 http://ldoszczeczko.cba.pl/freedomesProject/
 
 dane do logowania:
 login: admin
-has³o: admin12345
+hasÅ‚o: admin12345
