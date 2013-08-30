@@ -14,20 +14,38 @@
 		header("Location: ".$tmp."");
 	}
 
+	if (isset($_POST['Logout']) && (!empty($_POST['Logout']))) {
+		$_SESSION['logged']="0";
+		unset($_POST['Logout']);
+	}
+
 ?>
 <html>
 <head>
-<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-2">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
 <LINK REL="stylesheet" HREF="style.css" TYPE="text/css">
 </head>
 <body>
 
 <div id="banner">
-	TU BĘDZIE BANNER!
+	<a href="">TU BĘDZIE BANNER!</a>
 </div>
 </br>
 
 <div id="main">
+
+<?php
+	if(isset($_GET['id']))
+		$page=$_GET['id'];
+	else
+		$page=1;
+
+	if (!isset($_SESSION['logged']) || $_SESSION['logged']=="0") {
+			include "logging.php";
+	}
+	else{
+?>
+
 	<form method="POST" action="index.php">
 		<?php
 		echo("Tu wklej link:</br> <input type=\"text\" name=\"URL\" size=\"80\" value=\"".$_POST['URL']."\">");
@@ -72,11 +90,15 @@
 			}
 		}
 		$ret=array();
-		
-		
-
 		unset($_POST['cut']);
 	}
+
+	?>
+		<form method="POST" action="index.php">
+			<input type="submit" name="Logout" value="Logout">
+		</form>
+	<?php
+}
 ?>
 </div>
 </body>

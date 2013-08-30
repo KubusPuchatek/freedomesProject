@@ -12,7 +12,7 @@ class session
 	
 
 	function insert($url, $rand){
-		mysql_query('insert into URLcut values(null,\''.$url.'\',\''.$rand.'\', '');');
+		mysql_query('insert into URLcut values(null,\''.$url.'\',\''.$rand.'\', \'\');');
 	}
 
 	/*function update()
@@ -31,5 +31,17 @@ class session
 		}
 		return $s; 
  	}
+
+ 	Function find_user($szukaj){
+		$ret=array();
+		$op = mysql_query('select * from users where login=\''.$szukaj.'\';');
+		while ($lista = mysql_fetch_assoc($op)){
+			$ret[]=$lista;
+		}
+		return $ret;
+	}
+
+
+
 }
 ?>
