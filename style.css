@@ -1,0 +1,24 @@
+html, body{
+	background-color: #161616;
+	color: #fff;
+	font-size: small;
+	padding: 0;
+	margin-left: 75px;
+	margin-right: 75px;
+}
+
+#main{
+	background-color: #910101;
+	margin-left: 150px;
+	margin-right: 150px;
+	padding: 25px;
+}
+
+#banner{
+	background-color: #00299f;
+	height: 200px;
+	max-height: 200px;
+	min-height: 200px;
+	margin-right: 150px;
+	margin-left: 150px;
+}

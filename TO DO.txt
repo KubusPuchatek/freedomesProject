@@ -1,0 +1,5 @@
+TO DO:
+- new table in database for users,
+- form to logging,
+- database request for logging,
+- link usage logging,
